@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>A Multiplayer Game</title>
+        <script src="/socket.io/socket.io.js"></script>
+        <link rel="stylesheet" href="/static/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    </head>
+
+    <body id="main">
+        <div class="modal-backdrop">
+            <div class="modal">
+                <h1 id="username">Enter Username</h1>
+                <input type="text" id="username-field">
+            </div>
+        </div>
+        <h1 class="header">Battle Tanks</h1>
+        <h2 class="header">Controls: W,A,S,D to move. Spacebar to shoot</h2>
+        <div id="container">
+            <canvas id="canvas" tabindex="1"></canvas>
+            <div style="display: none">
+                <img id="brown" src="img/tank1.png">
+                <img id="red" src="img/tank2.png">
+                <img id="blue" src="img/tank3.png">
+                <img id="green" src="img/tank4.png">
+                <img id="pink" src="img/tank5.png">
+                <img id="orange" src="img/tank6.png">
+                <img id="purple" src="img/tank7.png">
+                <img id="white" src="img/tank8.png">
+                <img id="explosion9" src="img/explosion9.png">
+                <img id="explosion8" src="img/explosion8.png">
+                <img id="explosion7" src="img/explosion7.png">
+                <img id="explosion6" src="img/explosion6.png">
+                <img id="explosion5" src="img/explosion5.png">
+                <img id="explosion4" src="img/explosion4.png">
+                <img id="explosion3" src="img/explosion3.png">
+                <img id="explosion2" src="img/explosion2.png">
+                <img id="explosion1" src="img/explosion1.png">
+                <img id="obstacle1" src="img/obstacle1.jpg">
+                <img id="speed" src="img/speed.png">
+                <img id="weapon" src="img/weapon.png">
+                <img id="health1" src="img/health1.png">
+                <img id="health2" src="img/health2.png">
+                <img id="health3" src="img/health3.png">
+            </div>
+            <div>
+                <table id="scoreboard" class="score">
+                    <thead>SCORE</thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div class="chat-room">
+                <div id="received-texts"></div>
+                <input type="text" id="input-field">
+            </div>
+        </div>
+    </body>
+    <script src="/static/chat.js"></script>
+    <script src="/static/game.js"></script>
+</html>

@@ -1,0 +1,126 @@
+#container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#main {
+    text-align: center;
+    font-family: Roboto;
+    padding: 50px 100px 0 100px;
+}
+
+#canvas, .chat-room, .score {
+    border: solid grey 1px;
+    box-shadow: 0px 0px 5px 1px darkgrey;
+}
+
+#canvas {
+    width: 800px;
+    height: 600px;
+}
+
+.score{
+    width: 180px;
+}
+.scoretd, .scoreth{
+    border: 1px solid black;
+    padding: 8px;
+}
+
+
+.chat-room {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 5px;
+    width: 40%;
+    height: 500px;
+    padding: 10px;
+
+    text-align: center;
+    background-color: #f4f4f4;
+
+}
+
+
+#input-field {
+    display: inline-block;
+    /*position: fixed;*/
+}
+
+#received-texts {
+    display: flex;
+    overflow-y: auto;
+    overflow-x: hidden;
+    flex-direction: column;
+    margin: 10px;
+}
+
+#input-field {
+    align-self: center;
+    margin: 10px;
+}
+
+.local, .remote {
+    text-align: left;
+    padding: 5px;
+    box-shadow: 0px 0px 3px 1px darkgrey;
+    border-radius: 4px;
+    margin: 7px;
+    width: 50%;
+    word-wrap: break-word;
+}
+
+.local {
+    align-self: flex-end;
+    background-color: rgba(137, 236, 255, 0.6);
+}
+
+.remote {
+    align-self: flex-start;
+    background-color: white;
+}
+
+.name {
+    color: #737373;
+    font-size: 12px;
+}
+
+.text {
+    color: black;
+}
+
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.85);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal {
+    z-index: 1010;
+
+    text-align: center;
+    background-color: white;
+    padding: 50px;
+    border-radius: 30px;
+    width: 20vw;
+    height: 30vh;
+}
+
+#username {
+    margin-bottom: 100px;
+}
+
+.hidden {
+    display: none;
+}
